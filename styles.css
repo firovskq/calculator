@@ -1,0 +1,159 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "SF Pro Display", sans-serif;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+  background-image: url(/photos/lg.png);
+  overflow: hidden;
+}
+
+.mainBlock {
+  background-color: black;
+  width: 350px;
+  height: 690px;
+  border-radius: 45px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 735px;
+  z-index: 2;
+}
+
+.borders {
+  width: 400px;
+  height: 720px;
+  top: -10px;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow {
+  font-family: "SF Pro Display", sans-serif;
+  height: 5%;
+  width: 85%;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.battery-percentage,
+.current-time {
+  font-size: 16px;
+  position: absolute;
+  z-index: 2;
+}
+
+.battery-percentage {
+  right: 10px;
+  z-index: 2;
+}
+
+.current-time {
+  left: 10px;
+  z-index: 2;
+}
+
+.internet-connection {
+  position: absolute;
+  color: white;
+  width: 20px;
+  height: 15px;
+  top: 50%;
+  left: 230px;
+  top: 23px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.output {
+  color: #fff;
+  font-family: "SF Pro", sans-serif;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 274;
+  line-height: normal;
+  position: absolute;
+  right: 37px;
+  top: 150px;
+  text-align: right;
+  margin: 0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 250px;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.button {
+  width: 68px;
+  height: 68px;
+  border-radius: 44px;
+  font-size: 24px;
+  padding: 15px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #fff;
+}
+
+.button:hover {
+  background-color: #555555;
+}
+
+.button.clear,
+.button.invert-sign,
+.button.percentage {
+  flex: 1;
+  background-color: #a5a5a5;
+  color: white;
+}
+
+.button.zero {
+  flex: 2;
+  background-color: #333;
+  color: white;
+}
+
+.button.number,
+.button.dot {
+  flex: 0.8;
+  background-color: #333;
+  color: white;
+}
+
+.button.operation.multiply,
+.button.operation.subtract,
+.button.operation.add,
+.button.equal,
+.button.divide {
+  flex: 1;
+  background-color: #f1a33b;
+  color: white;
+}
